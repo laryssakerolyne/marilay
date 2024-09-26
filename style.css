@@ -26,7 +26,7 @@ input[type="text"], input[type="email"], input[type="password"] {
     border-radius: 4px;
 }
 input[type="submit"] {
-    background-color: #4CAF50;
+    background-color: #ce7bbc;
     color: white;
     border: none;
     padding: 10px;
@@ -35,5 +35,5 @@ input[type="submit"] {
     width: 100%;
 }
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #ce72b2;
 }
