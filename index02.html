@@ -1,33 +1,185 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
+	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Venda</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Pc Store</title>
+
+	<!-- Normalize CSS -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+
+	<!-- Estilo customizado -->
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+	<!--[if lt IE 9]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+	<![endif]-->
+
+
 </head>
-<body>
-    <div class="container">
-        <h1>Venda de Produtos</h1>
-        <div class="product">
-            <h2>ÈBANO UBLIME</h2>
-            <p>Descrição do Produto 1: Um produto incrível que você vai adorar.</p>
-            <p>Preço: R$ 99,99</p>
-            <button>Comprar</button>
+<body style="overflow: auto">
+    <section id="produtos" class="produtos postagens"> <!-- Area de produtos -->
+
+        <div class="h1-center">
+            <h1>Produtos a venda</h1>
         </div>
-        <div class="product">
-            <h2>Produto 2</h2>
-            <p>Descrição do Produto 2: Este produto vai facilitar sua vida.</p>
-            <p>Preço: R$ 149,99</p>
-            <button>Comprar</button>
+
+        <!-- Cards de vendas -->
+        <div class="produtos">
+
+            <div class="card zoom">
+              <div class="card-header">
+                <img src="./img/img-vendas/pc1.jpg" alt="pc" />
+              </div>
+            <div class="card-body">
+                <h4>
+                  Pc Cpu Intel Core i5-9400f + NVIDIA GEFORCE GTX 750 2GB
+                </h4>
+                  
+                <ul class="list-card">
+                  <li><b>Sistema operacional:</b>	Windows 10</li>
+                  <li><b>Marca:</b>	PC - Store </li>
+                  <li><b>Modelo da CPU:</b>	Core i5 9400f</li>
+                  <li><b>Fabricante da CPU:</b>	Intel </li>
+                  <li><b>Velocidade da CPU:</b>	3.2 GHz</li>
+                  <li><b>Tamanho instalado da memória RAM:</b>	8 GB </li>
+                  <li><b>Descrição do disco rígido:</b>	SSD 512GB</li>
+                  <li><b>Placa de Vídeo:</b> NVIDIA GEFORCE GTX 750 2GB GDDR5  </li>
+                </ul>
+                      
+            </div>
+            </div>
+
+            <div class="card zoom">
+              <div class="card-header">
+                <img src="./img/img-vendas/pc2.jpg" alt="pc" />
+              </div>
+              <div class="card-body">
+                <h4>
+                  PC Gamer AMD Ryzen 7 5700G + NVIDIA GeForce GTX 1660 6GB
+                </h4>
+
+                <ul class="list-card">
+                  <li><b>Sistema operacional:</b>	Windows 10</li>
+                  <li><b>Marca:</b>	PC - Store </li>
+                  <li><b>Modelo da CPU:</b>	AMD Ryzen 7</li>
+                  <li><b>Fabricante da CPU:</b>	AMD </li>
+                  <li><b>Velocidade da CPU:</b>	3.8 GHz</li>
+                  <li><b>Tamanho instalado da memória RAM:</b>	16 GB </li>
+                  <li><b>Descrição do disco rígido:</b>	SSD M.2 NVMe 240GB</li>
+                  <li><b>Placa de Vídeo:</b>	NVIDIA GeForce GTX 1660 OC 6GB  </li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="card zoom">
+              <div class="card-header">
+                <img src="./img/img-vendas/pc3.jpg" alt="pc" />
+              </div>
+              <div class="card-body">
+                <h4>
+                  PC Gamer OnGaming Core i9-12900k + GeForce RTX 3070Ti 8GB
+                </h4>
+                
+                <ul class="list-card">
+                  <li><b>Sistema operacional:</b>	Windows 10 </li>
+                  <li><b>Marca:</b>	PC - Store </li>
+                  <li><b>Modelo da CPU:</b> Intel	i9 12th 12900k </li>
+                  <li><b>Fabricante da CPU:</b>	Intel </li>
+                  <li><b>Velocidade da CPU:</b>	5.2 GHz </li>
+                  <li><b>Tamanho instalado da memória RAM:</b> 32gb </li>
+                  <li><b>Descrição do disco rígido:</b>	SSD Nvme 500GB </li>
+                  <li><b>Placa de Vídeo:</b> Nvidia GeForce RTX 3070Ti 12GB  </li>                
+                </ul>
+                
+              </div>
+            </div>
+
+            <div class="card zoom">
+              <div class="card-header">
+                <img src="./img/img-vendas/pc4.jpg" alt="pc" />
+              </div>
+              <div class="card-body">
+
+                <h4>
+                  PC Gamer AMD 6-Core 3.8Ghz + Placa de vídeo Radeon R5 2GB
+                </h4>
+
+                <ul class="list-card">
+                  <li><b>Sistema operacional:</b>	Windows 10</li>
+                  <li><b>Modelo da CPU:</b>	AMD A6</li>
+                  <li><b>Marca:</b>	PC - Store </li>
+                  <li><b>Fabricante da CPU:</b>	AMD</li>
+                  <li><b>Velocidade da CPU:</b>	3.8 GHz</li>
+                  <li><b>Tamanho instalado da memória RAM:</b>	8 GB </li>
+                  <li><b>Descrição do disco rígido:</b>	SSD 512</li>
+                  <li><b>Placa de Vídeo:</b>	AMD Radeon R5 Graphics 2GB </li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="card zoom flip-container" ontouchstart="this.classList.toggle('hover');">
+              <div class="card-header zoom front">
+                <img src="./img/img-vendas/pc5.jpg" alt="pc" />
+              </div>
+              <div class="card-body flipper">
+
+                <h4>
+                  PC Gamer OnGaming Core i7-11700KF + GeForce RTX 2060 2GB
+                </h4>
+                
+                <ul class="list-card back">
+                  <li><b>Sistema operacional:</b>	Windows 10</li>
+                  <li><b>Modelo da CPU:</b>	Intel Core i7 11900K</li>
+                  <li><b>Marca:</b>	PC - Store </li>
+                  <li><b>Fabricante da CPU:</b>	Intel </li>
+                  <li><b>Velocidade da CPU:</b>	3.6 GHz</li>
+                  <li><b>Tamanho instalado da memória RAM:</b>	12 GB </li>
+                  <li><b>Descrição do disco rígido:</b>	SSD M.2 NVMe 500GB</li>
+                  <li><b>Placa de Vídeo:</b>	NVIDIA GeForce RTX 2060 4GB  </li>
+                </ul>
+
+            </div>
+          </div>
+
+          <div class="card zoom">
+            <div class="card-header">
+              <img src="./img/img-vendas/pc6.jpg" alt="pc" />
+            </div>
+            <div class="card-body">
+              <h4>
+                Pc Cpu Intel Core i3-10100F + Nvidia GeForce GTX 550 Ti
+              </h4>
+                
+              <ul class="list-card">
+                <li><b>Sistema operacional:</b>	Windows 10</li>
+                <li><b>Modelo da CPU:</b>	Intel Core i3 11900K</li>
+                <li><b>Marca:</b>	PC - Store </li>
+                <li><b>Fabricante da CPU:</b>	Intel </li>
+                <li><b>Velocidade da CPU:</b>	4.8 GHz</li>
+                <li><b>Tamanho instalado da memória RAM:</b>	8 GB </li>
+                <li><b>Descrição do disco rígido:</b>	SSD kingston 240gb</li>
+                <li><b>Placa de Vídeo:</b>	Nvidia GeForce GTX 550 Ti 1GB </li>
+              </ul>
+
+            </div>
+          </div>
         </div>
-        <div class="product">
-            <h2>Produto 3</h2>
-            <p>Descrição do Produto 3: O melhor para você e sua família.</p>
-            <p>Preço: R$ 199,99</p>
-            <button>Comprar</button>
-        </div>
-    </div>
+
+            
+    </section>  <!-- Fim da area de produtos -->
+    
+    <!-- Menu Mobile -->
+    <script src="./js/mobile-navbar.js"></script>
+
+    <!-- Animação slider -->
+    <script src="./js/slideshow.js"></script>
+
 </body>
 </html>
-
