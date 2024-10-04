@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<style>
+body {
+  background-color: rgb(218, 48, 167);
+  text-align: center;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="produto">
+            <img src="02.webp" alt="Samsung Galaxy A03 Core">
+            <h3 class="titulo">Kit lily</h3>
+            <p class="descricao"> L'eau de Lily Soleil Desodorante Colônia 75ml
+                L'eau de Lily Desodorante Colônia 75ml</p>
+            <p class="preco">PREÇO:R$ 194,80
+                             9x de R$ 21,64</p>
+            <a href="link_para_compra" class="comprar">COMPRAR</a>
+        </div>
+        <!-- Repetir o bloco .produto para mais cartões -->
+    </div>
+    <div class="container">
+        <div class="produto">
+            <img src="03.avif" alt="Samsung Galaxy A03 Core">
+            <h3 class="titulo">Combo Floratta</h3>
+            <p class="descricao"> Floratta Red Desodorante Colônia 75ml
+                Floratta Cerejeira Em Flor Desodorante Colônia 75ml
+                Floratta Flores Secretas Desodorante Colônia 75ml</p>
+            <p class="preco">PREÇO:299,80 
+                7x de R$ 42,83</p>
+            <a href="link_para_compra" class="comprar">COMPRAR</a>
+        </div>
+        <!-- Repetir o bloco .produto para mais cartões -->
+    </div>
+        
+</body>
+</html>
