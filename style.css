@@ -312,7 +312,7 @@ table {
     width: 100%;
 }
 td{
-    border: 1px solid #e0357d;
+    border: 1px solid #e06397;
 }
 .mobile {
     display: none;
@@ -325,3 +325,85 @@ td{
         display: none;
     }
 }
+
+
+
+
+
+
+/* Estilos para o container dos cartões */
+.container {
+    justify-content: flex-start; 
+  
+      width: 70%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 30px;
+  }
+  
+  /* Estilos para o cartão do produto */
+  .produto {
+      width: calc(50% - 30px); /* Ajuste na largura do cartão para caber dois por linha */
+      padding: 20px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      border-radius: 15px;
+      background: #fff;
+      margin-bottom: 30px;
+      transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .produto:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Estilos para a imagem do produto */
+  .produto img {
+      width: 100%;
+      height: auto;
+      border-radius: 15px 15px 0 0;
+      margin-bottom: 10px
+  }
+  
+  /* Estilos para o título do produto */
+  .produto .titulo {
+      font-weight: 600;
+      font-size: 18px;
+      color: #333;
+      margin-bottom: 10px;
+  }
+  
+  /* Estilos para a descrição do produto */
+  .produto .descricao {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 20px;
+  }
+  
+  /* Estilos para o preço do produto */
+  .produto .preco {
+      font-size: 22px;
+      font-weight: bold;
+      color: #2ECC71;
+      margin-bottom: 20px;
+  }
+  
+  /* Estilos para o botão de compra */
+  .produto .comprar {
+      background-color: #2ECC71;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      display: block;
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease-in-out;
+  }
+  
+  .produto .comprar:hover {
+      background-color: #28B463;
+  }
+  
