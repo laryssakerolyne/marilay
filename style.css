@@ -308,31 +308,6 @@
 
 
 
-  body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh; /* Para ocupar toda a altura da tela */
-    margin: 0;
-    font-family: Arial, sans-serif;
-    text-align: center; /* Centraliza o texto */
-}
-
-.container {
-    text-align: center; /* Garante que todo o texto no container esteja centralizado */
-}
-
-.imagem-centralizada {
-    max-width: 100%; /* Para garantir que a imagem não ultrapasse a largura da tela */
-    height: auto; /* Mantém a proporção da imagem */
-}
-
-
-
-
-
-
-
 table {
     width: 100%;
 }
