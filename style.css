@@ -326,3 +326,27 @@
     max-width: 100%; /* Para garantir que a imagem não ultrapasse a largura da tela */
     height: auto; /* Mantém a proporção da imagem */
 }
+
+
+
+
+
+
+
+table {
+    width: 100%;
+}
+td{
+    border: 1px solid #000;
+}
+.mobile {
+    display: none;
+}
+@media (max-width: 800px) {
+    .mobile {
+        display: table;
+    }
+    .desktop {
+        display: none;
+    }
+}
