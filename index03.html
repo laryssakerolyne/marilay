@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Jurídico</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 15px;
+        }
+
+        .box {
+            background-color: white;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .box.large {
+            grid-column: span 2;
+        }
+
+        .box.full {
+            grid-column: span 4;
+        }
+
+        .box h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .box p {
+            font-size: 16px;
+            margin-bottom: 20px;
+        }
+
+        .sales-panel {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sales-panel h1 {
+            font-size: 36px;
+            color: #333;
+        }
+
+        .graph {
+            height: 150px;
+            background-color: #e5efff;
+            border-radius: 4px;
+        }
+
+        .progress-bar {
+            height: 20px;
+            background-color: #4CAF50;
+            border-radius: 4px;
+        }
+
+        .progress-container {
+            background-color: #ddd;
+            border-radius: 4px;
+            width: 100%;
+            height: 20px;
+        }
+
+        .status {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+
+        .status h3 {
+            font-size: 16px;
+            color: #666;
+        }
+
+        .status p {
+            font-size: 16px;
+        }
+
+        .status .value {
+            font-weight: bold;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: #ff4747;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 10px;
+            font-size: 14px;
+        }
+
+        /* Gráfico */
+        #column-chart {
+            width: 100%;
+            height: 400px;
+            margin-top: 30px;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+
+            .box.large, .box.full {
+                grid-column: span 1;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        // Carregar a biblioteca de visualização do Google Charts
+        google.charts.load('current', {packages: ['corechart', 'bar']});
+        google.charts.setOnLoadCallback(drawColumnChart);
+
+        // Função para desenhar o gráfico de colunas agrupadas
+        function drawColumnChart() {
+            var data = google.visualization.arrayToDataTable([
+                ['Mês', 'Receita', 'Despesa'],
+                ['Outubro', 4708, 12435],
+                ['Novembro', 4708, 12435],
+                ['Dezembro', 4708, 12435],
+                ['Janeiro', 4667, 12435],
+                ['Fevereiro', 4667, 12435],
+                ['Março', 5000, 13500],
+                ['Abril', 5200, 14500],
+                ['Maio', 5500, 15500],
+                ['Junho', 6000, 16000],
+                ['Julho', 6200, 17000]
+            ]);
+
+            var options = {
+                title: 'Receitas x Despesas (R$)',
+                chartArea: {width: '70%'},
+                hAxis: {
+                    title: 'Meses',
+                },
+                vAxis: {
+                    title: 'Valor (R$)',
+                    minValue: 0
+                },
+                legend: { position: 'top', alignment: 'center' },
+                colors: ['#4CAF50', '#FF4C4C'],
+                bar: { groupWidth: '75%' }
+            };
+
+            var chart = new google.visualization.ColumnChart(document.getElementById('column-chart'));
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <!-- Painel de Vendas -->
+        <div class="box large">
+            <h2>Painel de Vendas</h2>
+            <div class="sales-panel">
+                <div>
+                    <h1>R$ 109.538,42</h1>
+                    <p>Valor Vendido</p>
+                    <p>836 Transações</p>
+                </div>
+                <div class="graph">
+                    <!-- Aqui podemos implementar um gráfico futuramente -->
+                </div>
+            </div>
+        </div>
+
+        <!-- Vendas Ontem -->
+        <div class="box">
+            <h2>Vendas Ontem</h2>
+            <p class="value">R$661,54</p>
+        </div>
+
+        <!-- Cartão -->
+        <div class="box">
+            <h2>Cartão</h2>
+            <p class="value">R$109.538,42</p>
+        </div>
+
+        <!-- Conciliação -->
+        <div class="box">
+            <h2>Conciliação</h2>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 51%;"></div>
+            </div>
+            <p>51% Cartões Conciliados</p>
+        </div>
+
+        <!-- Notas Fiscais -->
+        <div class="box">
+            <h2>Notas Fiscais</h2>
+            <p>225 Notas Emitidas</p>
+            <p class="value">R$407.771,24</p>
+        </div>
+
+        <!-- Receitas Vencidas -->
+        <div class="box">
+            <h2>Receitas Vencidas</h2>
+            <p class="value">R$9.508,74</p>
+            <p>118 Parcelas Vencidas</p>
+        </div>
+
+        <!-- Status -->
+        <div class="box">
+            <h2>Adquirentes e Taxas</h2>
+            <div class="status">
+                <div>
+                    <h3>Cadastros Pendentes</h3>
+                    <span class="badge">2</span>
+                </div>
+                <div>
+                    <h3>Divergências Encontradas</h3>
+                    <span class="badge">R$156,78</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Hoje Recebido -->
+        <div class="box large">
+            <h2>Hoje</h2>
+            <div class="progress-container">
+                <div class="progress-bar" style="width: 66%;"></div>
+            </div>
+            <p>R$3.707,95 Recebido</p>
+        </div>
+
+        <!-- Bloco extra à direita -->
+        <div class="box">
+            <h2>Contas Bancárias</h2>
+            <p>Conta Principal: R$567,77</p>
+            <p>Investimentos: R$0,00</p>
+            <p>Dinheiro: -R$567,77</p>
+        </div>
+
+        <!-- Gráfico de Colunas Agrupadas -->
+        <div class="box full">
+            <div id="column-chart"></div>
+        </div>
+    </div>
+
+</body>
+</html>
