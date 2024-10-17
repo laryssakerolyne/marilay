@@ -1,27 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fondo Rojo</title>
-    <title>Página Centralizada</title>
-
-    <li><a href="index01.html">MUNDO MARILAY</li>
-    
-    <style>
-        body {
-            background-color: rgba(226, 108, 201, 0.315); /* Cambia este color según lo que desees */
-            color: white; /* Color del texto */
-            font-family: Arial, sans-serif; 
-            height: 100vh;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    </style>
+    <title>Mercado Verde</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
- 
-    <h1></h1>
+    <header>
+        <div class="logo">Mercado Verde</div>
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#produtos">Produtos</a></li>
+                <li><a href="#carrinho">Carrinho</a></li>
+                <li><a href="#login">Login</a></li>
+                <li><a href="#cadastro">Cadastro</a></li>
+                <li><a href="#perfil">Perfil</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h1>Bem-vindo ao Mercado Verde!</h1>
+            <p>Seu marketplace para produtos ecológicos e sustentáveis.</p>
+        </section>
+
+        <section id="produtos">
+            <h2>Produtos em Destaque</h2>
+            <div class="product-list" id="product-list"></div>
+        </section>
+
+        <section id="carrinho">
+            <h2>Carrinho de Compras</h2>
+            <div class="cart" id="cart"></div>
+            <button id="checkout-button">Finalizar Compra</button>
+        </section>
+
+        <section id="login">
+            <h2>Login</h2>
+            <form id="login-form">
+                <input type="email" id="login-email" placeholder="Email" required>
+                <input type="password" id="login-password" placeholder="Senha" required>
+                <button type="submit">Entrar</button>
+            </form>
+        </section>
+
+        <section id="cadastro">
+            <h2>Cadastro de Usuário</h2>
+            <form id="register-form">
+                <input type="text" id="register-name" placeholder="Nome" required>
+                <input type="email" id="register-email" placeholder="Email" required>
+                <input type="password" id="register-password" placeholder="Senha" required>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </section>
+
+        <section id="perfil">
+            <h2>Perfil do Usuário</h2>
+            <p id="user-info"></p>
+            <button id="sell-button">Vender Produto</button>
+        </section>
+
+        <section id="sell-product" style="display: none;">
+            <h2>Vender Produto</h2>
+            <form id="sell-form">
+                <input type="text" id="product-name" placeholder="Nome do Produto" required>
+                <input type="number" id="product-price" placeholder="Preço" required>
+                <input type="url" id="product-image" placeholder="URL da Imagem" required>
+                <button type="submit">Listar Produto</button>
+            </form>
+            <div id="sell-message"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mercado Verde. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
+
