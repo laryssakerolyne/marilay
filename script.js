@@ -3,19 +3,19 @@ const products = [
         id: 1,
         name: 'Sacola Reutilizável',
         price: 25.00,
-        image: 'https://example.com/image1.jpg', // Substitua pela URL da imagem
+        image: 'https://example.com/01.webp', // Substitua pela URL da imagem
     },
     {
         id: 2,
         name: 'Escova de Dente de Bambu',
         price: 15.00,
-        image: 'https://example.com/image2.jpg', // Substitua pela URL da imagem
+        image: 'https://example.com/02.webp', // Substitua pela URL da imagem
     },
     {
         id: 3,
         name: 'Canudo de Metal',
         price: 10.00,
-        image: 'https://example.com/image3.jpg', // Substitua pela URL da imagem
+        image: 'https://example.com/03.webp', // Substitua pela URL da imagem
     },
 ];
 
