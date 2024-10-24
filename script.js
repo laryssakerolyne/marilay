@@ -3,19 +3,19 @@ const products = [
         id: 1,
         name: 'Sacola Reutilizável',
         price: 25.00,
-        image: 'https://example.com/01.webp', // Substitua pela URL da imagem
+        image: 'https://images.tcdn.com.br/img/img_prod/763982/01.webp', // Substitua pela URL da imagem
     },
     {
         id: 2,
         name: 'Escova de Dente de Bambu',
         price: 15.00,
-        image: 'https://example.com/02.webp', // Substitua pela URL da imagem
+        image: 'https://positivaeco.vtexassets.com/arquivos/ids/02.webp?v=638236454370200000', // Substitua pela URL da imagem
     },
     {
         id: 3,
         name: 'Canudo de Metal',
         price: 10.00,
-        image: 'https://example.com/03.webp', // Substitua pela URL da imagem
+        image: 'https://www.atecmetais.com/imagens/informacoes/canudo-metal-atacado-03.webp', // Substitua pela URL da imagem
     },
 ];
 
